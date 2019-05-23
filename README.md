@@ -15,3 +15,5 @@ This project demonstrates how you can utilize lambda@edge to create a serverless
 ## Deploy
 * Deploy the project: `$ npm run deploy`
 
+## Demo
+* Visit [Demo page](https://d2fx7xr3uscglr.cloudfront.net/)
