@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-serverless-at-edge",
+  "version": "1.0.0",
+  "description": "Nuxt.js running on Lambda@edge",
+  "author": "Ivar Vermeulen",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "local": "sls invoke local -f render -p cloudfront-test-event.json",
+    "deploy": "sls deploy",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt-start": "^2.7.1",
+    "express": "^4.16.4",
+    "serverless-http": "github:thuisbioscoop/serverless-http"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "nuxt": "^2.7.1",
+    "serverless-plugin-cloudfront-lambda-edge": "^2.1.0",
+    "serverless-scriptable-plugin": "^1.0.1"
+  }
+}

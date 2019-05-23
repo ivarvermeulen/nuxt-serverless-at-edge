@@ -1,0 +1,66 @@
+{
+    "Records": [
+        {
+            "cf": {
+                "config": {
+                    "distributionDomainName": "d2fx7xr3uscglr.cloudfront.net",
+                    "distributionId": "EOQPAT1HDNWK2",
+                    "eventType": "origin-request"
+                },
+                "request": {
+                    "clientIp": "83.219.75.9",
+                    "headers": {
+                        "user-agent": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Amazon CloudFront"
+                            }
+                        ],
+                        "via": [
+                            {
+                                "key": "Via",
+                                "value": "2.0 f31086fa351552c6b3265043b382c53e.cloudfront.net (CloudFront)"
+                            }
+                        ],
+                        "x-forwarded-for": [
+                            {
+                                "key": "X-Forwarded-For",
+                                "value": "83.219.75.9"
+                            }
+                        ],
+                        "accept-encoding": [
+                            {
+                                "key": "Accept-Encoding",
+                                "value": "gzip"
+                            }
+                        ],
+                        "upgrade-insecure-requests": [
+                            {
+                                "key": "upgrade-insecure-requests",
+                                "value": "1"
+                            }
+                        ],
+                        "host": [
+                            {
+                                "key": "Host",
+                                "value": "nuxt-serverless-at-edge.s3.amazonaws.com"
+                            }
+                        ]
+                    },
+                    "method": "GET",
+                    "origin": {
+                        "s3": {
+                            "authMethod": "origin-access-identity",
+                            "customHeaders": {},
+                            "domainName": "nuxt-serverless-at-edge.s3.amazonaws.com",
+                            "path": "/test",
+                            "region": "us-east-1"
+                        }
+                    },
+                    "querystring": "",
+                    "uri": "/test"
+                }
+            }
+        }
+    ]
+}
