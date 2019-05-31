@@ -39,7 +39,7 @@ custom:
      before:deploy:deploy: 
        - aws s3 cp --recursive ./.nuxt/dist/client/ s3://nuxt-serverless-at-edge/_nuxt/ --cache-control "max-age=31536000,public,immutable"
        - aws s3 cp --recursive ./static/ s3://nuxt-serverless-at-edge/ --exclude "README.md" --cache-control "max-age=31536000,public,immutable"
-     before:deploy:finalize: aws cloudfront create-invalidation --distribution-id ${cf:nuxt-serverless-at-edge-dev.NuxtEdgeDistributionId} --paths "/*"
+     #after:deploy:finalize: aws cloudfront create-invalidation --distribution-id ${cf:nuxt-serverless-at-edge-dev.NuxtEdgeDistributionId} --paths "/*"
 
 package:
   individually: true
