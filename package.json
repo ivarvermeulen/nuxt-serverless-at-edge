@@ -15,7 +15,7 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt-start": "^2.7.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "serverless-http": "github:thuisbioscoop/serverless-http"
   },
   "devDependencies": {
