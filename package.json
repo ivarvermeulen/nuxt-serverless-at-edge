@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
-    "nuxt": "^2.7.1",
+    "nuxt": "^2.15.8",
     "serverless-plugin-cloudfront-lambda-edge": "^2.1.0",
     "serverless-scriptable-plugin": "^1.0.1"
   }
